@@ -1,13 +1,14 @@
 /* ==UserStyle==
 @name         MAL-Night
-@version      1.0.0
+@version      1.0.1
 @description  Dark/Nightmode theme for MyAnimeList.net
 @namespace    KillYoy
 @author       KillYoy
 @homepageURL  https://github.com/KillYoy/MAL-Night
 @updateURL    https://raw.githubusercontent.com/KillYoy/MAL-Night/master/MAL-Night.user.css
+
 ==/UserStyle== */
-@-moz-document domain("myanimelist.net") {
+@-moz-document regexp("https:\\/\\/myanimelist.net\\/(?!(animelist|mangalist|ownlist\\/style\\/theme)).*") {
 /* Advertisement Killer */
 .mal-ad-unit,
 .right_top_ad,
@@ -17,7 +18,9 @@
 .btn-affiliate.icon-shop-default,
 .page-common iframe.fb-page,
 .page-common #headerSmall .banner-header-anime-straming,
-.page-common #footer-block .banner-footer-anime-streaming {
+.page-common #footer-block .banner-footer-anime-streaming,
+.koukoku-sticky-wrapper,
+.pda-tla-nUGkAdHmiepCTsbx {
 	visibility: hidden;
 	display: none !important;
 }
@@ -37,7 +40,7 @@
 
 /* Body */
 body:not(.ownlist) {
-	background-color: #111111;
+	background-color: #111111 !important;
 	background-image: none;
 	color: #FFFFFF;
 }
@@ -148,7 +151,7 @@ body:not(.ownlist) {
 .page-common .header-profile-link:hover,
 .page-common .header-list-button,
 .page-common .header-list.on .header-list-button,
-.page-common .header-message-button, 
+.page-common .header-message-button,
 .page-common .header-message-button .fa,
 .page-common .header-notification-button,
 .page-common .header-notification-button.has-unread {
@@ -285,20 +288,21 @@ body.index .widget .index_h2_seo a:hover,
 .page-common a:visited:hover {
 	color: #1D439B;
 }
-body.index .widget .widget-header {
-	color: #FFFFFF;
-	border-color: #333333;
+body.index .widget .widget-header,
+.widget-header h2 a {
+	color: #FFFFFF !important;
+	border-color: #333333 !important;
 }
 .page-common .borderClass,
 .page-common .border_top,
 .page-common .borderDark,
 .page-common .border_solid,
 body.index .left-column,
-body.index .widget.my_list_updates .item, 
-body.index .widget.friend_list_updates .item, 
-body.index .widget.clubs .item, 
+body.index .widget.my_list_updates .item,
+body.index .widget.friend_list_updates .item,
+body.index .widget.clubs .item,
 body.index .widget.reviews .item {
-	border-color: #333333;
+	border-color: #333333 !important;
 }
 body.index .widget.my_statistics table td:nth-child(1) {
 	color: #CCCCCC;
@@ -477,7 +481,7 @@ a.title[data-v-617a7b38] {
 	color: #CCCCCC;
 }
 /* Characters & Voice Actors */
-.detail-characters-list .left-column table:nth-of-type(1n), 
+.detail-characters-list .left-column table:nth-of-type(1n),
 .detail-characters-list .left-right table:nth-of-type(1n) {
 	background-color: #1C1C1C;
 }
@@ -499,8 +503,8 @@ a.title[data-v-617a7b38] {
 .page-common .lightLink {
 	color: #A5A5A5;
 }
-.page-common .lightLink:link, 
-.page-common .lightLink:visited, 
+.page-common .lightLink:link,
+.page-common .lightLink:visited,
 .page-common .lightLink:active {
 	color: #0D80FF;
 }
@@ -795,7 +799,7 @@ a.title[data-v-617a7b38] {
 
 /* Sorting / Sorted By X Dropdown */
 .season .btn-show-sort,
-.season .btn-show-kids, 
+.season .btn-show-kids,
 .season .btn-show-r18,
 .season .seasonal-sort-order-block .sort-order-list .btn-sort-order,
 .anime-filter .btn-show-sort,
@@ -1137,7 +1141,7 @@ body.news .news-list .comment-list .quotetext {
 .page-forum .forum_boardrow1 {
 	color: #CCCCCC;
 }
-.page-common .quotetext, 
+.page-common .quotetext,
 .page-common .codetext {
 	background-color: #131313;
 	border: none;
@@ -1214,14 +1218,14 @@ body.news .news-list .comment-list .quotetext {
 .profile .user-statistics .stats-graph.mt8 {
 	height: 12px;
 }
-.profile .user-statistics .stats-graph { 
-	border-radius: 4px; 
+.profile .user-statistics .stats-graph {
+	border-radius: 4px;
 }
-.profile .user-statistics .stats-graph span:first-of-type { 
-	border-radius: 4px 0 0 4px; 
+.profile .user-statistics .stats-graph span:first-of-type {
+	border-radius: 4px 0 0 4px;
 }
 .profile .user-statistics .stats-graph span:last-of-type {
-	border-radius: 0 4px 4px 0; 
+	border-radius: 0 4px 4px 0;
 }
 /* Friends Card */
 .majorPad .bgLightBlue,
@@ -1232,7 +1236,7 @@ body.news .news-list .comment-list .quotetext {
 }
 
 /* User Profile Settings */
-.page-common .goodresult, 
+.page-common .goodresult,
 .page-common .successQuery,
 .page-common .badresult,
 .page-common .setting-row {
@@ -1296,8 +1300,8 @@ body.news .news-list .comment-list .quotetext {
 .message .mym_subject a.subject-link .text {
 	color: #CCCCCC !important;
 }
-.pmessage-message-history .date, 
-.pmessage-message-history .name, 
+.pmessage-message-history .date,
+.pmessage-message-history .name,
 .pmessage-message-history .subject,
 .message:last-of-type > .mym {
 	border-color: #333333;
@@ -1318,11 +1322,11 @@ body.news .news-list .comment-list .quotetext {
 #dialog td .normal_header {
 	background-color: transparent;
 }
-.ownlist_anime_update #advanced-button .separator, 
+.ownlist_anime_update #advanced-button .separator,
 .ownlist_manga_update #advanced-button .separator {
 	border-color: #333333;
 }
-.ownlist_anime_update #advanced-button .toggle-button, 
+.ownlist_anime_update #advanced-button .toggle-button,
 .ownlist_manga_update #advanced-button .toggle-button {
 	background-color: #333333;
 	color: #FFFFFF;
@@ -1374,7 +1378,7 @@ a.manga-store-genre-list-toggle:hover,
 .manga-store .comics-list,
 .manga-store .content-detail-bottom,
 .manga-store .section-title,
-.manga-store .detail-card .detail-title, 
+.manga-store .detail-card .detail-title,
 .manga-store .detail-card .detail-body,
 .manga-store .detail-card .detail-infoList-item.copyright,
 .detail-preview-container.hasPreview[data-v-9259a4a8]::after {
@@ -1382,15 +1386,15 @@ a.manga-store-genre-list-toggle:hover,
 }
 
 /* Add To List Page */
-.quickadd-content .quickAdd-anime-result-unit:nth-of-type(2n+1), 
+.quickadd-content .quickAdd-anime-result-unit:nth-of-type(2n+1),
 .quickadd-content .quickAdd-manga-result-unit:nth-of-type(2n+1) {
 	background-color: #212121;
 }
-.quickadd-content .quickAdd-anime-result-unit:nth-of-type(2n+2), 
+.quickadd-content .quickAdd-anime-result-unit:nth-of-type(2n+2),
 .quickadd-content .quickAdd-manga-result-unit:nth-of-type(2n+2) {
 	background-color: #191919;
 }
-.quickadd-content .quickAdd-anime-result-unit, 
+.quickadd-content .quickAdd-anime-result-unit,
 .quickadd-content .quickAdd-manga-result-unit {
 	border-bottom: none;
 	color: #CCCCCC;
@@ -1440,7 +1444,7 @@ img.lazyloaded[src="https://cdn.myanimelist.net/images/about/overview/head-bg.jp
 	color: #FFFFFF;
 }
 /* Terms Of Use Page */
-h1[data="EULA"], 
+h1[data="EULA"],
 h1[data="TermsOfUse"],
 .mal-address {
 	background-color: transparent;
