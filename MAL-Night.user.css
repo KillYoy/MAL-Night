@@ -1076,6 +1076,10 @@ body.news .news-list .comment-list .quotetext {
 .people-favorites-ranking-table tr.ranking-list .birthday {
 	color: #CCCCCC !important;
 }
+.boxlist,
+.head-config {
+	background-color: #1C1C1C !important;
+}
 
 /* Featured Articles */
 .featured-pickup .featured-pickup-unit .image{
