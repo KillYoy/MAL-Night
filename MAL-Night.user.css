@@ -39,7 +39,7 @@
 }
 
 /* Body */
-body:not(.ownlist) {
+body:not(.ownlist), html {
 	background-color: #111111 !important;
 	background-image: none;
 	color: #FFFFFF;
