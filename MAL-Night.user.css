@@ -8,7 +8,7 @@
 @updateURL    https://raw.githubusercontent.com/KillYoy/MAL-Night/master/MAL-Night.user.css
 
 ==/UserStyle== */
-@-moz-document regexp("https:\\/\\/myanimelist.net\\/(?!(animelist|mangalist|ownlist\\/style\\/theme)).*") {
+@-moz-document regexp("^https:\\/\\/myanimelist\\.net\\/(?!(?:anime|manga)list|ownlist\\/style\\/theme).*$") {
 
 	/* Advertisement Killer */
 	.mal-ad-unit,
