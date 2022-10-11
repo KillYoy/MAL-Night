@@ -954,7 +954,11 @@
 	}
 
 	.seasonal-anime-list .seasonal-anime .information .information-item.buttons .bubble::after {
-		border-right: none !important;
+		border-right: 6px solid #191919 !important;
+	}
+
+	.seasonal-anime-list .seasonal-anime .information .information-item.buttons .bubble .bubble-item {
+		display: inline;
 	}
 
 	.seasonal-anime-list .seasonal-anime .information .information-item.buttons .bubble,
