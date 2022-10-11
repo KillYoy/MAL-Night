@@ -374,7 +374,8 @@
 		border: none;
 	}
 
-	.page-common .bgColor0 {
+	.page-common .bgColor0,
+	.page-common .bg-color-base5 {
 		background-color: #191919;
 	}
 
@@ -942,6 +943,23 @@
 	.seasonal-anime-list .seasonal-anime .prodsrc .icon-add-episode {
 		filter: invert(1) contrast(0.8) hue-rotate(190deg);
 		height: 16px;
+	}
+
+	.seasonal-anime-list .seasonal-anime .properties .property:nth-child(even) {
+		background-color: transparent !important;
+	}
+
+	.seasonal-anime-list .seasonal-anime .properties .property:nth-child(odd) {
+		background-color: #161616;
+	}
+
+	.seasonal-anime-list .seasonal-anime .information .information-item.buttons .bubble::after {
+		border-right: none !important;
+	}
+
+	.seasonal-anime-list .seasonal-anime .information .information-item.buttons .bubble,
+	.seasonal-anime-list .seasonal-anime .information .information-item.buttons .bubble.anime .bubble-item.content {
+		background-color: #191919 !important;
 	}
 
 	.icon-watch,
