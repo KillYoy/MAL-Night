@@ -355,6 +355,16 @@
 		border-color: #333333 !important;
 	}
 
+	body.index .widget-container .widget.friend_list_updates .footer {
+		background-color: #212121 !important;
+		border-top: none;
+	}
+
+	body.index .widget-container .widget.friend_list_updates .footer .dialog-settings,
+	body.index .widget-container .widget.friend_list_updates .footer .dialog-settings thead tr th {
+		background-color: #212121 !important;
+	}
+
 	body.index .widget.my_statistics table td:nth-child(1) {
 		color: #CCCCCC;
 	}
