@@ -1777,13 +1777,24 @@
 		border-bottom: none;
 	}
 
-	.review-element .text {
+	.review-element .text,
+	.review-element .rating {
 		color: #CCCCCC !important;
 	}
 
 	.review-element .btn-label {
 		border-color: #131313 !important;
 		background-color: #131313 !important;
+	}
+
+	.review-element .reaction-box {
+		border-color: transparent !important;
+		background-color: transparent !important;
+	}
+
+	.review-element .reaction-box .btn-reaction {
+		background-color: #161616 !important;
+		border-color: #161616 !important;
 	}
 }
 
