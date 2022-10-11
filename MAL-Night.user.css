@@ -1758,6 +1758,23 @@
 	.manga-store .manga-store-bookshelf .manga-store-bookshelf-rows {
 		border-color: #333333;
 	}
+
+	.review-element {
+		background-color: #212121;
+	}
+
+	.review-element .thumbbody {
+		border-bottom: none;
+	}
+
+	.review-element .text {
+		color: #CCCCCC !important;
+	}
+
+	.review-element .btn-label {
+		border-color: #131313 !important;
+		background-color: #131313 !important;
+	}
 }
 
 @-moz-document url-prefix("https://myanimelist.net/animelist"),
