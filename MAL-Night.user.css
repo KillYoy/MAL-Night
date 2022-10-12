@@ -1804,7 +1804,7 @@
 		color: #CCCCCC !important;
 	}
 
-	.review-element .btn-label {
+	.review-element .thumbbody .body .tags * {
 		border-color: #131313 !important;
 		background-color: #131313 !important;
 	}
