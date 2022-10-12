@@ -1814,9 +1814,16 @@
 		background-color: transparent !important;
 	}
 
-	.review-element .reaction-box .btn-reaction {
+	.reviews-horiznav-nav-sort-block .review-filter-block,
+	.review-element .reaction-box .btn-reaction,
+	.menu-block {
 		background-color: #161616 !important;
 		border-color: #161616 !important;
+	}
+
+	.write_a_review .tips,
+	.write_a_review .notice-box {
+		background-color: #191919;
 	}
 }
 
