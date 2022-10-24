@@ -305,7 +305,7 @@
 	/* Small Header/My Panel */
 	.page-common .h1,
 	.initialize-tutorial {
-		background-color: #191919;
+		background-color: #191919 !important;
 		border: none;
 		color: #FFFFFF;
 	}
