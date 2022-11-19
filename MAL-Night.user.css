@@ -43,7 +43,7 @@
 
 	/* Body */
 	body:not(.ownlist),
-	html {
+	#myanimelist {
 		background-color: #111111 !important;
 		background-image: none;
 		color: #FFFFFF;
