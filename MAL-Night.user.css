@@ -694,9 +694,15 @@
 	}
 
 	/* Recent Forum Discussions & Articles */
-	.page-forum .forum_boardrow2 {
-		background-color: #181818;
+	.page-forum .forum_boardrow2,
+	.page-common table.forum-topics tr td:nth-child(2n+1) {
+		background-color: #181818 !important;
 		border: none;
+	}
+
+	.page-common table.forum-topics tr td {
+		background-color: #1c1c1c;
+		border: none
 	}
 
 	.page-forum .forum_boardrow1 {
@@ -714,8 +720,15 @@
 		color: #CCCCCC;
 	}
 
-	#forumTopics .js-toggle-watching-topic-button,
-	#forumTopics .js-ignore-topic-button {
+	.mal-navbar,
+	.mal-alert,
+	.page-forum .topic-poll .topic-poll-button {
+		background-color: transparent !important
+	}
+
+	.mal-navbar .mal-btn-toolbar,
+	.mal-navbar .mal-btn-group,
+	.fl-r.ar * {
 		filter: invert(0.9) hue-rotate(185deg) saturate(4);
 	}
 
@@ -1337,8 +1350,8 @@
 		border: none;
 	}
 
-	.forum .forum-side-block .forum-side-list img.thumbs,
-	.forum .forum-board {
+	.page-forum .forum-topic-message .message-wrapper .profile,
+	.page-forum .forum-topic-message .message-wrapper .content {
 		background-color: #191919;
 		border: none;
 	}
