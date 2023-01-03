@@ -21,6 +21,8 @@
 	.page-common #headerSmall .banner-header-anime-straming,
 	.page-common #footer-block .banner-footer-anime-streaming,
 	.koukoku-sticky-wrapper,
+	.mal-modal.show,
+	.mal-modal-backdrop.show,
 	.pda-tla-nUGkAdHmiepCTsbx {
 		visibility: hidden;
 		display: none !important;
