@@ -23,7 +23,8 @@
 	.koukoku-sticky-wrapper,
 	.mal-modal.show,
 	.mal-modal-backdrop.show,
-	.pda-tla-nUGkAdHmiepCTsbx {
+	.pda-tla-nUGkAdHmiepCTsbx,
+	.sUaidzctQfngSNMH-pdatla {
 		visibility: hidden;
 		display: none !important;
 	}
@@ -1839,138 +1840,5 @@
 	.write_a_review .tips,
 	.write_a_review .notice-box {
 		background-color: #191919;
-	}
-}
-
-@-moz-document url-prefix("https://myanimelist.net/animelist"),
-url-prefix("http://myanimelist.net/animelist"),
-url-prefix("https://myanimelist.net/mangalist"),
-url-prefix("http://myanimelist.net/mangalist") {
-
-	/* MyAnimeList */
-	body {
-		background-color: #111111 !important;
-	}
-
-	body.ownlist {
-		background-image: none;
-	}
-
-	.header {
-		background-color: #2E51A2;
-		width: 100%;
-		height: 34px;
-	}
-
-	.header .header-title {
-		background-size: 179px auto;
-		top: 4px;
-		left: 10px;
-	}
-
-	.header .header-menu,
-	.header .header-menu.other {
-		top: 8px;
-		right: 30px;
-	}
-
-	.status-menu-container {
-		background-color: #191919;
-		border-bottom: none;
-		height: 42px;
-	}
-
-	/* Logo */
-	.cover-block .image-container img,
-	.cover-block .image-container {
-		padding-top: 0px;
-		margin-bottom: 0px;
-		height: 240px;
-		display: none;
-	}
-
-	/* Table */
-	.list-container,
-	.list-table {
-		background-color: #212121 !important;
-		border: none;
-	}
-
-	.list-block {
-		margin-top: -8px;
-	}
-
-	.list-table .list-table-header .header-title {
-		background-color: #191919;
-		background: none;
-		border-bottom: none;
-	}
-
-	.status-menu-container .status-menu .status-button.on,
-	.list-unit .list-status-title .text,
-	.list-unit .list-status-title .stats a,
-	.list-table .list-table-data .data.score .link,
-	.list-table .list-table-data .data,
-	.list-table .list-table-data a.edit-disabled {
-		color: #FFFFFF;
-	}
-
-	.list-unit,
-	.list-unit .list-stats {
-		width: auto;
-		color: #FFFFFF;
-	}
-
-	.list-unit .list-status-title {
-		width: 1058px;
-	}
-
-	.list-table .list-table-data .data.title,
-	.list-table .list-table-data .data.title .add-edit-more {
-		float: none;
-	}
-
-	.list-table .list-table-header .header-title.started,
-	.list-table .list-table-header .header-title.finished {
-		width: 94px;
-	}
-
-	.list-table .list-table-header .header-title.progress,
-	.list-table .list-table-header .header-title.tags {
-		width: 80px;
-	}
-
-	.list-table>tbody:nth-of-type(2n+1) {
-		background-color: #191919;
-	}
-
-	.list-table .list-table-data .data {
-		border-bottom: none;
-		padding: 3px 0;
-	}
-
-	.list-table .list-table-data .data.image .image {
-		width: 53px;
-		height: 76px;
-		border: none;
-	}
-
-	/* Left List */
-	.list-menu-float {
-		border: none;
-	}
-
-	.list-menu-float .icon-menu {
-		background-color: #212121 !important;
-	}
-
-	/* Footer */
-	#footer-block {
-		background-color: #212121;
-	}
-
-	.list-unit .loading-space {
-		/* display: none; */
-		margin: 0px;
 	}
 }
