@@ -55,6 +55,7 @@
 	.page-common #contentWrapper {
 		background-color: #212121;
 		padding-bottom: 1px;
+		margin-top: 20px;
 	}
 
 	#myanimelist:before,
@@ -109,7 +110,8 @@
 		position: fixed;
 		top: 0;
 		left: 0;
-		width: 100%;
+		width: 100% !important;
+		height: 48px !important;
 		z-index: 99;
 	}
 
@@ -119,23 +121,19 @@
 	}
 
 	.page-common #menu_left {
+		margin-top: 5px;
 		margin-left: 200px;
+		top: 8px;
 	}
 
 	.page-common #headerSmall a.link-mal-logo {
 		position: fixed;
-		width: 179px;
+		width: 179px !important;
 		height: 32px;
-		top: 4px;
 		left: 10px;
 		z-index: 999;
 		filter: invert(1) saturate(0) brightness(1.5);
-	}
-
-	.page-common #headerSmall>a.link-mal-logo {
-		background-image: url(https://cdn.myanimelist.net/images/mal-logo-xsmall.png?v=180226001);
-		position: fixed;
-		top: 2px;
+		background-image: url(https://cdn.myanimelist.net/images/mal-logo-xsmall.png);
 	}
 
 	.page-common #header-menu.pulldown {
@@ -145,7 +143,7 @@
 	}
 
 	.page-common #menu_right {
-		position: absolute;
+		position: absolute !important;
 		left: 39.5%;
 	}
 
@@ -284,6 +282,11 @@
 	}
 
 	/* Searchbar */
+
+	#top-search-bar {
+		margin-top: 5px !important
+	}
+
 	.page-common #searchBar.searchBar #topSearchText,
 	.page-common #searchBar.searchBar #topSearchValue option {
 		background-color: #243763;
@@ -300,9 +303,9 @@
 
 	.page-common #searchBar.searchBar #topSearchValue {
 		background-position: 78px 8px;
-		background-color: #DBC89C;
+		margin-top: 5px;
+		background-color: #243763 !important;
 		border: none;
-		filter: invert(1);
 	}
 
 	/* Small Header/My Panel */
