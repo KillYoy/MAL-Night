@@ -498,15 +498,6 @@
 		color: #0D80FF;
 	}
 
-	.user-status-block .form-user-episode input[type="text"],
-	.user-status-block .form-user-episode.completed input[type="text"],
-	.user-status-block .form-user-episode input[type="text"]:focus,
-	.user-status-block .form-user-episode.completed input[type="text"]:focus {
-		background-color: #131313;
-		border: none;
-		color: #0D80FF;
-	}
-
 	.page-common .notice_open_public {
 		display: none;
 	}
